@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [insertDepart]" parallel="tests">
+  <test thread-count="5" name="Add_05(failed)" parallel="tests">
+    <parameter name="password" value="123456"/>
+    <parameter name="expected" value="true"/>
+    <parameter name="fullname" value="Trịnh Hoàng Quân"/>
+    <parameter name="username" value="s2"/>
+    <classes>
+      <class name="java5.assignment.test.DepartDAOTest">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="AfterMethod"/>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="addStaff1" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- java5.assignment.test.DepartDAOTest -->
+    </classes>
+  </test> <!-- Add_05(failed) -->
+  <test thread-count="5" name="Add_04(failed)" parallel="tests">
+    <parameter name="password" value="123456"/>
+    <parameter name="expected" value="true"/>
+    <parameter name="fullname" value="Trịnh Hoàng Quân"/>
+    <parameter name="username" value="s"/>
+    <classes>
+      <class name="java5.assignment.test.DepartDAOTest">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="AfterMethod"/>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="addStaff1" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- java5.assignment.test.DepartDAOTest -->
+    </classes>
+  </test> <!-- Add_04(failed) -->
+  <test thread-count="5" name="Add_06(failed)" parallel="tests">
+    <parameter name="password" value="123456"/>
+    <parameter name="expected" value="true"/>
+    <parameter name="fullname" value="Trịnh Hoàng Quân"/>
+    <parameter name="username" value="aswedeassssssssssss"/>
+    <classes>
+      <class name="java5.assignment.test.DepartDAOTest">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="AfterMethod"/>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="addStaff1" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- java5.assignment.test.DepartDAOTest -->
+    </classes>
+  </test> <!-- Add_06(failed) -->
+  <test thread-count="5" name="Add_07(failed)" parallel="tests">
+    <parameter name="password" value="123456"/>
+    <parameter name="expected" value="true"/>
+    <parameter name="fullname" value="Trịnh Hoàng Quân"/>
+    <parameter name="username" value="aswedeasssssssssssss"/>
+    <classes>
+      <class name="java5.assignment.test.DepartDAOTest">
+        <methods>
+          <include name="springTestContextBeforeTestClass"/>
+          <include name="AfterMethod"/>
+          <include name="tearDown"/>
+          <include name="beforeMethod"/>
+          <include name="springTestContextPrepareTestInstance"/>
+          <include name="springTestContextAfterTestClass"/>
+          <include name="springTestContextBeforeTestMethod"/>
+          <include name="springTestContextAfterTestMethod"/>
+          <include name="addStaff1" invocation-numbers="0"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- java5.assignment.test.DepartDAOTest -->
+    </classes>
+  </test> <!-- Add_07(failed) -->
+</suite> <!-- Failed suite [insertDepart] -->

@@ -1,0 +1,8 @@
+eclipse.preferences.version=1
+encoding//Resources/datafile.properties=UTF-8
+encoding//Resources/locator.properties=UTF-8
+encoding//src/java5/assignment/controller/StaffController.java=UTF-8
+encoding//src/java5/assignment/entity/Staff.java=UTF-8
+encoding//src/java5/assignment/test/StaffDAOTest.java=UTF-8
+encoding//src/java5/assignment/test/testDao.java=UTF-8
+encoding//src/java5/assignment/testAutoWithSelenium/maNhanVienTest.java=UTF-8

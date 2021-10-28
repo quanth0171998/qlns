@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="insertDepart" parallel="tests">
+	<test name="Add_01">
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_02">
+		<parameter name="username" value="quan$@!@"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_03">
+		<parameter name="username" value="    "/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_04">
+		<parameter name="username" value="s"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_05">
+		<parameter name="username" value="s2"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_06">
+		<parameter name="username" value="aswedeassssssssssss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_07">
+		<parameter name="username" value="aswedeasssssssssssss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_08">
+		<parameter name="username" value="aswedeassssssssssssss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_09">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_10">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="quanth$#@!"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_11">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="quanth123"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_12">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="    "/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_13">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="a"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_14">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="aa"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_15">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="aaaasssssssssssssssssssss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_16">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="aaaasssssssssssssssssssssssssssssssssssssssssssss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_17">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="aaaassssssssssssssssssssssssssssssssssssssssssssss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_18">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="123456"/>
+		<parameter name="fullname" value="aaaasssssssssssssssssssssssssssssssssssssssssssssss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_19">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="fullname" value="aaaasss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_20">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="emva12@#$#4"/>
+		<parameter name="fullname" value="aaaasss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_21">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="em va12"/>
+		<parameter name="fullname" value="aaaasss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_22">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="s"/>
+		<parameter name="fullname" value="aaaasss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_23">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="ss"/>
+		<parameter name="fullname" value="aaaasss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_24">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="sssssssssssssssssss"/>
+		<parameter name="fullname" value="aaaasss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_25">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="ssssssssssssssssssss"/>
+		<parameter name="fullname" value="aaaasss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_26">
+		<parameter name="username" value="aswedeasss"/>
+		<parameter name="password" value="sssssssssssssssssssss"/>
+		<parameter name="fullname" value="aaaasss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_27">
+		
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_28">
+		<parameter name="username" value="quan1234"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_29">
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_30">
+		<parameter name="password" value="quan1234"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_31">
+		<parameter name="username" value="quan1234"/>
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_32">
+		<parameter name="username" value="quan1234"/>
+		<parameter name="password" value="quan12345"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_33">
+		<parameter name="password" value="quan1234"/>
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_34">
+		<parameter name="username" value="quan1234"/>
+		<parameter name="password" value="quan12345"/>
+		<parameter name="fullname" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

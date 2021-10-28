@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="18550" started-at="2020-06-17T02:50:03Z" finished-at="2020-06-17T02:50:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18550" started-at="2020-06-17T02:50:03Z" finished-at="2020-06-17T02:50:22Z">
+      <class name="java5.assignment.testAutoWithSelenium.maNhanVienTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="beforeTest" is-config="true" duration-ms="6549" started-at="2020-06-17T02:50:03Z" finished-at="2020-06-17T02:50:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="setUp" is-config="true" duration-ms="153" started-at="2020-06-17T02:50:10Z" finished-at="2020-06-17T02:50:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="insertStaff32()[pri:32, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="insertStaff32" duration-ms="2206" started-at="2020-06-17T02:50:10Z" description="Bỏ trống tất cả các trường" finished-at="2020-06-17T02:50:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertStaff32 -->
+        <test-method status="PASS" signature="tearDow()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="tearDow" is-config="true" duration-ms="0" started-at="2020-06-17T02:50:12Z" finished-at="2020-06-17T02:50:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDow -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="setUp" is-config="true" duration-ms="128" started-at="2020-06-17T02:50:12Z" finished-at="2020-06-17T02:50:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="insertStaff33()[pri:33, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="insertStaff33" duration-ms="2496" started-at="2020-06-17T02:50:12Z" description="Bỏ trống  họ tên, ngày sinh, ảnh, email, sdt, mã phòng ban" finished-at="2020-06-17T02:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertStaff33 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="setUp" is-config="true" duration-ms="83" started-at="2020-06-17T02:50:15Z" finished-at="2020-06-17T02:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDow()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="tearDow" is-config="true" duration-ms="0" started-at="2020-06-17T02:50:15Z" finished-at="2020-06-17T02:50:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDow -->
+        <test-method status="PASS" signature="insertStaff34()[pri:34, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="insertStaff34" duration-ms="2266" started-at="2020-06-17T02:50:15Z" description="Bỏ trống Mã nhân viên, ngày sinh, ảnh, email, sdt, mã phòng ban" finished-at="2020-06-17T02:50:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertStaff34 -->
+        <test-method status="PASS" signature="tearDow()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="tearDow" is-config="true" duration-ms="0" started-at="2020-06-17T02:50:17Z" finished-at="2020-06-17T02:50:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDow -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="setUp" is-config="true" duration-ms="87" started-at="2020-06-17T02:50:17Z" finished-at="2020-06-17T02:50:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="insertStaff35()[pri:35, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="insertStaff35" duration-ms="2267" started-at="2020-06-17T02:50:17Z" description="Bỏ trống Mã nhân viên, họ tên, ảnh, email, sdt, mã phòng ban" finished-at="2020-06-17T02:50:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertStaff35 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="setUp" is-config="true" duration-ms="98" started-at="2020-06-17T02:50:20Z" finished-at="2020-06-17T02:50:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tearDow()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="tearDow" is-config="true" duration-ms="0" started-at="2020-06-17T02:50:20Z" finished-at="2020-06-17T02:50:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDow -->
+        <test-method status="PASS" signature="insertStaff36()[pri:36, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="insertStaff36" duration-ms="2196" started-at="2020-06-17T02:50:20Z" description="Bỏ trống Mã nhân viên, họ tên, ngày sinh, email, sdt, mã phòng ban" finished-at="2020-06-17T02:50:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- insertStaff36 -->
+        <test-method status="PASS" signature="tearDow()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="tearDow" is-config="true" duration-ms="0" started-at="2020-06-17T02:50:22Z" finished-at="2020-06-17T02:50:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDow -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:java5.assignment.testAutoWithSelenium.maNhanVienTest@21213b92]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-06-17T02:50:22Z" finished-at="2020-06-17T02:50:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- java5.assignment.testAutoWithSelenium.maNhanVienTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

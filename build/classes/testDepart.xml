@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="insertDepart" parallel="tests">
+	<test name="Add_01">
+		<parameter name="name" value="Phòng nhân sự"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_02">
+		<parameter name="id" value="PS12$@$!"/>
+		<parameter name="name" value="Phòng nhân sự"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_03">
+		<parameter name="id" value="    "/>
+		<parameter name="name" value="Phòng nhân sự"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_04">
+		<parameter name="id" value="s"/>
+		<parameter name="name" value="Phòng nhân sự"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_05">
+		<parameter name="id" value="sa"/>
+		<parameter name="name" value="Phòng nhân sự"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_06">
+		<parameter name="id" value="sa1234567"/>
+		<parameter name="name" value="Phòng nhân sự"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_07">
+		<parameter name="id" value="sa12123452"/>
+		<parameter name="name" value="Phòng nhân sự"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_08">
+		<parameter name="id" value="sa121234599"/>
+		<parameter name="name" value="Phòng nhân sự"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_09">
+		<parameter name="id" value="sa121239"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_10">
+		<parameter name="id" value="sa121239"/>
+		<parameter name="name" value="Phòng nhân sự@#!4"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_11">
+		<parameter name="id" value="sa121239"/>
+		<parameter name="name" value="         "/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_12">
+		<parameter name="id" value="sa121239"/>
+		<parameter name="name" value="s"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_13">
+		<parameter name="id" value="sa121239"/>
+		<parameter name="name" value="as"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_14">
+		<parameter name="id" value="sa121239"/>
+		<parameter name="name" value="aasssssssssssssssssssssss"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_15">
+		<parameter name="id" value="sa121239"/>
+		<parameter name="name" value="aasssssssssssssssssssssssssssssssssssssssssssssss"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_16">
+		<parameter name="id" value="sa121239"/>
+		<parameter name="name" value="aassssssssssssssssssssssssssssssssssssssssssssssss"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_17">
+		<parameter name="id" value="sa121239"/>
+		<parameter name="name" value="aasssssssssssssssssssssssssssssssssssssssssssssssss"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_18">
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_19">
+		<parameter name="name" value="Phòng nhân sự"></parameter>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_20">
+		<parameter name="id" value="VSS"></parameter>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_21">
+		<parameter name="id" value="VSS"/>
+		<parameter name="name" value="Phòng nhân sự"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.DepartDAOTest">
+				<methods>
+					<include name="addStaff1"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

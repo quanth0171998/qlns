@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="insertStaff" parallel="tests" verbose="1">
+<!-- Kiem tra truong ma nhan vien -->
+	<test name="Add_001">
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Add_002">
+		<parameter name="id" value="s"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Add_003">
+		<parameter name="id" value="PH0123456"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Add_004">
+		<parameter name="id" value="PH01234567"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Add_005">
+		<parameter name="id" value="PH012345678"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Add_006">
+		<parameter name="id" value="     "/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff1"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- Kiem tra truong email -->
+	<!-- Kiem tra khong dung dinh dang email -->
+	<test name="Add_007">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaaaaaaaa"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff2"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Bo trong email -->
+	<test name="Add_008">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff2"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Add_009">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff2"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- Kiem tra truong so dien thoai -->
+	<!-- 10 ki tu va khong bat dau bang so 0 -->
+	<test name="Add_010">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="3342356791"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff3"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- 10 ki tu va bat dau bang so 0 -->
+	<test name="Add_011">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaaaa@gmail.com"/>
+		<parameter name="phone" value="0334235679"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff3"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- 9 ki tu va bat dau bang so 0 -->
+	<test name="Add_012">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="033333333"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff3"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- 11 ki tu va bat dau bang so 0 -->
+	<test name="Add_013">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="03333333333"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff3"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- sdt la chu -->
+	<test name="Add_014">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="aaaaaaaaaaa"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff3"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Chi bao gom khoang trang -->
+	<test name="Add_015">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="     "/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff3"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- Kiểm tra trường lương -->
+	<!-- Thêm nhân viên với lương là chữ -->
+	<test name="Add_016">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="0892341234"/>
+		<parameter name="salary" value="aaaaaaaaaaa"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff5"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Thêm nhân viên với lương nhỏ hơn 0 -->
+	<test name="Add_017">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="0892341234"/>
+		<parameter name="salary" value="-111111"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff4"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Thêm nhân viên với lương bằng 0 -->
+	<test name="Add_018">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="0892341234"/>
+		<parameter name="salary" value="0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff4"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- Thêm nhân viên với lương lớn hơn 0 -->
+	<test name="Add_019">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="0892341234"/>
+		<parameter name="salary" value="1000000"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff4"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- Thêm nhân viên với lương gồm các kí tự khoảng trắng -->
+	<test name="Add_020">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="0892341234"/>
+		<parameter name="salary" value="      "/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff5"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- Thêm nhân viên với lương gồm cả chữ và số -->
+	<test name="Add_021">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="0892341234"/>
+		<parameter name="salary" value="a234a23sa"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff5"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<!-- Kiểm tra trường mã phòng ban -->
+	<!-- Thêm nhân viên không tồn tại trong bảng phòng ban -->
+	<test name="Add_022">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="aaaaaa@gmail.com"/>
+		<parameter name="phone" value="0892341234"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="aaaa"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff4"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<!-- Thêm nhân viên với mã nhân viên tồn tại trong bảng phòng ban -->
+	<test name="Add_023">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="gender" value="true"/>
+		<parameter name="photo" value="quanthph.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0892341234"/>
+		<parameter name="salary" value="500000.0"/>
+		<parameter name="notes" value="Rất tốt"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="true"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff6"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<!-- Bang quyet dinh -->
+	<test name="Add_024">
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_025">
+		<parameter name="id" value="quanthph08983"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_026">
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_027">
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_028">
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_029">
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_030">
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_031">
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_032">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_033">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="birthday" value="01/07/1008"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_034">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_035">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_036">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_037">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_038">
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Add_039">
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_040">
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_041">
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="phone" value="097670769"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Add_042">
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_043">
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_044">
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_045">
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_046">
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_047">
+		<parameter name="phone" value="user.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	
+	<test name="Add_048">
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_049">
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_050">
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_051">
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_052">
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_053">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_054">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_055">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_056">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Add_057">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_058">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_059">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_060">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_061">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_062">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_063">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_064">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_065">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_066">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_067">
+		<parameter name="id" value="PH08983"></parameter>
+		<parameter name="phone" value="0979707569"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_068">
+		<parameter name="name" value="Trịnh Hoàng Quân"></parameter>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_069">
+		<parameter name="name" value="Trịnh Hoàng Quân"></parameter>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_070">
+		<parameter name="name" value="Trịnh Hoàng Quân"></parameter>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_071">
+		<parameter name="name" value="Trịnh Hoàng Quân"></parameter>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_072">
+		<parameter name="name" value="Trịnh Hoàng Quân"></parameter>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_073">
+		<parameter name="name" value="Trịnh Hoàng Quân"></parameter>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_074">
+		<parameter name="name" value="Trịnh Hoàng Quân"></parameter>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_075">
+		<parameter name="name" value="Trịnh Hoàng Quân"></parameter>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	<test name="Add_076">
+		<parameter name="name" value="Trịnh Hoàng Quân"></parameter>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_077">
+		<parameter name="name" value="Trịnh Hoàng Quân"></parameter>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_078">
+		<parameter name="birthday" value="01/07/1998"></parameter>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_079">
+		<parameter name="birthday" value="01/07/1998"></parameter>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_080">
+		<parameter name="birthday" value="01/07/1998"></parameter>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_081">
+		<parameter name="birthday" value="01/07/1998"></parameter>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_082">
+		<parameter name="birthday" value="01/07/1998"></parameter>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_083">
+		<parameter name="birthday" value="01/07/1998"></parameter>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_084">
+		<parameter name="photo" value="user.jpg"></parameter>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_085">
+		<parameter name="photo" value="user.jpg"></parameter>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_086">
+		<parameter name="photo" value="user.jpg"></parameter>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_087">
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"></parameter>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_088">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_089">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_090">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_091">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_092">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_093">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_094">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_095">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_096">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_097">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="name" value="Trịnh Hoàng Quân"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_098">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="email" value="quanthph08983@fpt.edu.vn"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_099">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="phone" value="0976707569"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+	
+	<test name="Add_100">
+		<parameter name="id" value="PH08983"/>
+		<parameter name="birthday" value="01/07/1998"/>
+		<parameter name="photo" value="user.jpg"/>
+		<parameter name="departId" value="NS"/>
+		<parameter name="expected" value="false"/>
+		<classes>
+			<class name="java5.assignment.test.StaffDAOTest">
+				<methods>
+					<include name="addStaff7"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>
